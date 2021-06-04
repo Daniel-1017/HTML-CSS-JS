@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    
+    /*1 Metodo*/
+    /* animation-name: translateX, changeBg; si mette il nome dell'animazione */
+    /* animation-duration: 5s, 20s; durata animazione */
+    /* animation-iteration-count: infinite; quanto deve durare */
+    /* animation-direction: alternate; */
+    /* animation-timing-function: linear, ease-in-out; */
+    /* animation-play-state: running; */
+
+    /* animation-delay: 2s; dopo quanto inizia l'animazione */
+    /* animation-play-state: running; l'animazione continua*/
+    /* animation-play-state: paused; l'animazione si ferma*/
+    /* animation-fill-mode: both; l'oggetto inizia a muoversi e quando l'animazione finisce resta lì */
+    /* animation-fill-mode: forwards; 1.l'oggetto non c'è, 2.compare, 3.e quando finisc l'animazione resta lì */
+    /* animation-fill-mode: backwards; fa sparire l'oggetto quando finisce l'animazione */
+
+    /*2 Metodo*/
+    animation: translateX 2s, infinite, linear, alternate, infinite, 2s;
+}
+
+@keyframes translateX {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+        background-color: #b71540;
+    }
+
+    50% {
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: translateX(500px) translateY(100px) rotate(180deg) scale(0.5); 
+        background-color: #0c2461;
+    }
+}
+
+@keyframes changeBg {
+    0% {
+        background-color: #b71540;
+    }
+    20% {
+        background-color: #42b425;
+    }
+    40% {
+        background-color: #2724b9;
+    }
+    60% {
+        background-color: #e9ec47;
+    }
+    80% {
+        background-color: #34dddd;
+    }
+    100% {
+        background-color: #1bd371;
+    }
+}

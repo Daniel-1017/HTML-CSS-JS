@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.square {
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+    background-color: #000;
+
+    animation: move2 3s infinite alternate linear;
+}
+
+@keyframes move {
+    from {
+        top: 0;
+        left: 0;  /*non si usa "top left" potrebbe dare problemi (lagga)*/
+    }
+    to {
+        top: 3px;
+        left: 3px;
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: translate3d(0, 0, 0);  /*ma si usa transform: translate(); / transform: translate3d();*/
+    }
+    to {
+        transform: translate3d(3px, 3px, 0);
+    }
+}
