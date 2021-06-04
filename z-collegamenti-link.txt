@@ -1,0 +1,15 @@
+bootstrap.min.css {
+	link = https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+}
+
+bootstrap.min.css nav-bar {
+	google-link = https://getbootstrap.com/docs/4.3/components/navbar/
+}
+
+font-awesome {
+	link = https://kit.fontawesome.com/e535639128.js
+
+	<script src="https://kit.fontawesome.com/e535639128.js" crossorigin="anonymous"></script>
+}
